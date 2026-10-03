@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | EduPulse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">EduPulse<span class="logo-dot">.</span></a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Explore</a></li>
+                    <li><a href="dashboard.html" class="active">My Learning</a></li>
+                    <li><a href="course-player.html">LMS Demo</a></li>
+                </ul>
+                <div class="user-profile">
+                    <div class="avatar">JD</div>
+                    <span class="user-name">John Doe</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container dashboard-layout">
+        <aside class="dash-sidebar">
+            <div class="sidebar-menu">
+                <a href="#" class="sidebar-item active">📚 Enrolled Courses</a>
+                <a href="#" class="sidebar-item">🏆 Certificates</a>
+                <a href="#" class="sidebar-item">🔖 Saved Bookmarks</a>
+                <a href="#" class="sidebar-item">⚙️ Account Settings</a>
+            </div>
+        </aside>
+
+        <main class="dash-content">
+            <div class="welcome-banner">
+                <h2>Welcome back, John! 👋</h2>
+                <p>You've completed <strong>68%</strong> of your weekly learning goal. Keep up the great work!</p>
+            </div>
+
+            <div class="dash-stats-grid">
+                <div class="dash-stat-card">
+                    <span class="stat-icon">📖</span>
+                    <div>
+                        <div class="dash-stat-val">3</div>
+                        <div class="dash-stat-lbl">Active Courses</div>
+                    </div>
+                </div>
+                <div class="dash-stat-card">
+                    <span class="stat-icon">⏱️</span>
+                    <div>
+                        <div class="dash-stat-val">24.5 hrs</div>
+                        <div class="dash-stat-lbl">Time Spent Learning</div>
+                    </div>
+                </div>
+                <div class="dash-stat-card">
+                    <span class="stat-icon">🎓</span>
+                    <div>
+                        <div class="dash-stat-val">2</div>
+                        <div class="dash-stat-lbl">Certificates Earned</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="dash-section-title">In Progress Courses</h3>
+            <div class="progress-list">
+                <div class="progress-card">
+                    <div class="progress-info">
+                        <h3>Full-Stack Web Development Bootcamp</h3>
+                        <p>Next Lesson: Section 4 - Building REST APIs with Node.js</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <span class="progress-percent">65% Completed</span>
+                    </div>
+                    <a href="course-player.html" class="btn btn-primary">Resume Learning</a>
+                </div>
+
+                <div class="progress-card">
+                    <div class="progress-info">
+                        <h3>Figma UI/UX Masterclass 2026</h3>
+                        <p>Next Lesson: Section 2 - Auto Layout & Design Components</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 40%;"></div>
+                        </div>
+                        <span class="progress-percent">40% Completed</span>
+                    </div>
+                    <a href="course-player.html" class="btn btn-primary">Resume Learning</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

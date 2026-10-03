@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Viewer | Full-Stack Web Development Bootcamp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="lms-body">
+    <header class="lms-header">
+        <div class="lms-header-left">
+            <a href="dashboard.html" class="back-link">&larr; Back to Dashboard</a>
+            <h1 class="lms-course-title">Full-Stack Web Development Bootcamp</h1>
+        </div>
+        <div class="lms-header-right">
+            <button class="btn btn-sm btn-secondary" id="completeBtn">Mark as Complete ✓</button>
+        </div>
+    </header>
+
+    <div class="lms-layout">
+        <main class="lms-main">
+            <div class="video-container">
+                <div class="video-player">
+                    <div class="video-overlay">
+                        <span class="play-icon">▶</span>
+                        <p>Lesson 4: Building Scalable REST APIs with Node.js & Express</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lesson-details">
+                <div class="lesson-tabs">
+                    <button class="tab-btn active" data-tab="overview">Overview</button>
+                    <button class="tab-btn" data-tab="resources">Resources (2)</button>
+                    <button class="tab-btn" data-tab="qa">Q&A Discussion</button>
+                </div>
+
+                <div class="tab-content active" id="overview">
+                    <h2>Lesson Description</h2>
+                    <p>In this lesson, we will explore backend REST API architecture using Node.js and Express. You'll learn how to handle route parameters, construct middleware functions, and send structured JSON responses back to the client application.</p>
+                </div>
+
+                <div class="tab-content" id="resources">
+                    <h2>Downloadable Attachments</h2>
+                    <ul class="resource-list">
+                        <li>📄 <a href="#">Starter_Code_Node_Express.zip</a> (2.4 MB)</li>
+                        <li>📄 <a href="#">API_Cheatsheet_Guide.pdf</a> (1.1 MB)</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="qa">
+                    <h2>Community Discussion</h2>
+                    <div class="comment-box">
+                        <textarea placeholder="Ask a question about this lesson..."></textarea>
+                        <button class="btn btn-primary btn-sm" style="margin-top: 10px;">Post Question</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="lms-sidebar">
+            <div class="syllabus-header">
+                <h3>Course Content</h3>
+                <span class="syllabus-progress">12 / 186 Lessons Done</span>
+            </div>
+
+            <div class="syllabus-list">
+                <div class="module-item open">
+                    <div class="module-title">Section 1: HTML & CSS Fundamentals</div>
+                    <ul class="lesson-list">
+                        <li class="lesson-item completed">
+                            <span>✓ 1. Welcome & Environment Setup</span>
+                            <span class="dur">10:15</span>
+                        </li>
+                        <li class="lesson-item completed">
+                            <span>✓ 2. HTML5 Semantic Elements</span>
+                            <span class="dur">14:20</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="module-item open">
+                    <div class="module-title">Section 2: JavaScript Modern ES6+</div>
+                    <ul class="lesson-list">
+                        <li class="lesson-item completed">
+                            <span>✓ 3. Async/Await & Promises</span>
+                            <span class="dur">18:45</span>
+                        </li>
+                        <li class="lesson-item active">
+                            <span>▶ 4. Building REST APIs with Node.js</span>
+                            <span class="dur">22:10</span>
+                        </li>
+                        <li class="lesson-item">
+                            <span>🔒 5. Express Middleware Essentials</span>
+                            <span class="dur">15:30</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
